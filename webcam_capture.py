@@ -1,5 +1,6 @@
-from flask import Flask, render_template, Response, jsonify
+from flask import Flask, render_template, Response
 import cv2
+import os
 
 app = Flask(__name__)
 
@@ -33,9 +34,10 @@ def capture_image():
         # Save the image
         image_path = 'captured_image.jpg'
         cv2.imwrite(image_path, frame)
-        return jsonify({'status': 'success', 'path': image_path})
-    return jsonify({'status': 'error'})
+        return {'status': 'success', 'path': image_path}
+    return {'status': 'error'}
 
 if __name__ == '__main__':
     app.run(debug=True)
+
 
