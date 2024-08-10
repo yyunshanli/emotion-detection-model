@@ -36,5 +36,3 @@ def bbox_to_bytes(bbox_array):
     bbox_bytes = 'data:image/png;base64,{}'.format(str(b64encode(iobuf.getvalue()), 'utf-8'))
 
     return bbox_bytes
-
-
