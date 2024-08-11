@@ -1,1 +1,1 @@
-# ai-emotion-based-music-recommender-rec
+# emotion-detection-model
