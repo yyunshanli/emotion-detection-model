@@ -1,1 +1,1 @@
-# emotion-detection-model
+# emotion-detection-CNN
